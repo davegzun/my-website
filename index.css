@@ -10,7 +10,16 @@ gap: 24px;
 
 .nav-links li a{
     text-decoration: none;
-    color: #1a791b;
+    color: #E6D9D2;
     padding: 8px 12px;
+}
+
+body{
+    background-color: #090B90;
+}
+
+h1{
+    color: #E6D9D2;
+    text-align: center;
 }
 
