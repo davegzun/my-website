@@ -1,10 +1,10 @@
   // 1. YOUR END POINTS (results). Use as many as you want: 4 or 5 works well.
   //    The key (a, b, c, d) is just a label that the answers point to.
   const results = {
-    a: { title: "The Explorer",  text: "Write the description for this result here." },
-    b: { title: "The Builder",   text: "Write the description for this result here." },
-    c: { title: "The Dreamer",   text: "Write the description for this result here." },
-    d: { title: "The Connector", text: "Write the description for this result here." }
+    a: { title: "Magic: The Gathering",  text: "You enjoy the classic that started it all." },
+    b: { title: "Pokemon TCG",   text: "Wether you enjoy playing the video games, the creatures that inhabit their world, or collect a specific pokemon. this game is right for you." },
+    c: { title: "Riftbound",   text: "You enjoyed the legends that you played in the game League of Legends, and want to battle alongside them through conquering lands." },
+    d: { title: "One Piece", text: "You want to be free!." }
     // To add a fifth result, add:  e: { title: "...", text: "..." }
   };
 
@@ -12,12 +12,12 @@
   //    Try to give each result a roughly equal number of answers.
   const questions = [
     {
-      question: "It's a free Saturday. What do you do?",
+      question: "How do you view yourself in a game?",
       answers: [
-        { text: "Go somewhere I've never been",  result: "a" },
-        { text: "Work on a project at home",     result: "b" },
-        { text: "Stay in and daydream or draw",  result: "c" },
-        { text: "Call friends and make plans",   result: "d" }
+        { text: "I want to explore different regions, enjoying the lore that goes behind the scenes",  result: "a" },
+        { text: "I ask my companions to help me win against other trainers",     result: "b" },
+        { text: "With my champion, we will defeat our foes",  result: "c" },
+        { text: "I want to be free!",   result: "d" }
       ]
     },
     {

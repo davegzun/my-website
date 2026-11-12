@@ -1,0 +1,36 @@
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+
+gap: 24px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #E6D9D2;
+    padding: 8px 12px;
+}
+
+body{
+    background-color: #090B90;
+}
+
+h1{
+    color: #E6D9D2;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+  color: #d6336c; /* swap for your accent color */
+}
+
+nav a:hover::after,
+nav a:focus-visible::after,
+nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}

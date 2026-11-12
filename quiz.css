@@ -2,7 +2,7 @@
   :root {
     --bg: #f5f3ee;
     --card: #ffffff;
-    --text: #1d1d1b;
+    --text: #000057;
     --accent: #2f4de0;
     --line: #d8d4c8;
   }
@@ -51,3 +51,31 @@
     cursor: pointer;
   }
   .hidden { display: none; }
+
+  .nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+
+gap: 24px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #000057;
+    padding: 8px 12px;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+  color: #d6336c; /* swap for your accent color */
+}
+
+nav a:hover::after,
+nav a:focus-visible::after,
+nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
