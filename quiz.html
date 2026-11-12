@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
  <h2>this page is meant to be a simple quiz, where you can answer questions and find which card game is right for you.</h2>
  
-<h3>playstyle quiz</h3>
+ <button id="btn">Click me</button>
+
+  
+<main class="quiz">
+  <section id="quiz-screen">
+    <p class="progress" id="progress"></p>
+    <h1 id="question"></h1>
+    <div class="answers" id="answers"></div>
+  </section>
+
+  <section id="result-screen" class="hidden">
+    <p class="progress">Your result</p>
+    <h1 id="result-title"></h1>
+    <p id="result-text"></p>
+    <button id="restart">Take it again</button>
+  </section>
+</main>
 
  <a href="index.html">Home</a>
+
+ <script src="quiz.js"></script>
 
 </body>
 </html>
