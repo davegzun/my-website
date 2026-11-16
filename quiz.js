@@ -1,5 +1,4 @@
-  // 1. YOUR END POINTS (results). Use as many as you want: 4 or 5 works well.
-  //    The key (a, b, c, d) is just a label that the answers point to.
+  
   const results = {
     a: { title: "Magic: The Gathering",  text: "You enjoy the classic that started it all." },
     b: { title: "Pokemon TCG",   text: "Wether you enjoy playing the video games, the creatures that inhabit their world, or collect a specific pokemon. this game is right for you." },
@@ -8,8 +7,6 @@
     // To add a fifth result, add:  e: { title: "...", text: "..." }
   };
 
-  // 2. YOUR QUESTIONS. Every answer points to one result key.
-  //    Try to give each result a roughly equal number of answers.
   const questions = [
     {
       question: "How do you view yourself in a game?",
@@ -40,7 +37,6 @@
     }
   ];
 
-  // 3. Grab the elements we need from the page
   const quizScreen   = document.getElementById("quiz-screen");
   const resultScreen = document.getElementById("result-screen");
   const progressEl   = document.getElementById("progress");
@@ -50,7 +46,7 @@
   const textEl       = document.getElementById("result-text");
   const restartBtn   = document.getElementById("restart");
 
-  // 4. Keep track of where we are and each result's points
+
   let current = 0;
   let tally = {};
 
@@ -59,7 +55,7 @@
     Object.keys(results).forEach(function (key) { tally[key] = 0; });
   }
 
-  // 5. Show one question
+  
   function showQuestion() {
     const q = questions[current];
     progressEl.textContent = "Question " + (current + 1) + " of " + questions.length;
@@ -74,7 +70,7 @@
     });
   }
 
-  // 6. When someone clicks an answer: add a point, then move on
+ 
   function pickAnswer(resultKey) {
     tally[resultKey]++;
     current++;
@@ -85,7 +81,6 @@
     }
   }
 
-  // 7. Find the result with the most points (ties go to whichever comes first)
   function showResult() {
     let winner = Object.keys(tally)[0];
     Object.keys(tally).forEach(function (key) {
@@ -98,7 +93,6 @@
     resultScreen.classList.remove("hidden");
   }
 
-  // 8. Start over
   restartBtn.addEventListener("click", function () {
     current = 0;
     resetTally();
@@ -107,7 +101,6 @@
     showQuestion();
   });
 
-  // 9. Start the quiz
   resetTally();
   showQuestion();
 
