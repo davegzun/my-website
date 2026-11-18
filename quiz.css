@@ -30,7 +30,7 @@
   .answers button:hover { border-color: var(--accent); }
   .answers button:focus-visible,
   #restart:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-  #restart {
+  .restart {
     font: inherit;
     margin-top: 1rem;
     padding: 0.7rem 1.4rem;
@@ -56,6 +56,13 @@ body {
   margin: 2rem auto;   /* centers the card */
   padding: 2rem;
   border-radius: 12px;
+}
+
+.quiz-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem;
 }
 
 h2 {
