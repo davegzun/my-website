@@ -143,20 +143,38 @@ const preferenceQuestions = [
     ]
   },
   {
-    question: "Pick a tool for the day:",
+    question: "How do you think when you see a problem:",
     answers: [
-      { text: "A map", result: "a" },
-      { text: "A toolbox", result: "b" },
+      { text: "There are many angles I can think about to answer it", result: "a" },
+      { text: "No thoughts, just answer it", result: "b" },
       { text: "A sketchbook", result: "c" },
       { text: "A phone", result: "d" }
     ]
   },
   {
-    question: "What do people say about you?",
+    question: "How do you want to see your opponent?",
     answers: [
-      { text: "You're always up for something new", result: "a" },
-      { text: "You always finish what you start", result: "b" },
-      { text: "You have the best ideas", result: "c" },
+      { text: "A rival,", result: "b" },
+      { text: "A friend that I want to create good memories with", result: "a" },
+      { text: "Just the competition", result: "c" },
+      { text: "You make everyone feel welcome", result: "d" }
+    ]
+  },
+  {
+    question: "How do you want to see your opponent?",
+    answers: [
+      { text: "A rival,", result: "b" },
+      { text: "A friend that I want to create good memories with", result: "a" },
+      { text: "Just the competition", result: "c" },
+      { text: "You make everyone feel welcome", result: "d" }
+    ]
+  },
+  {
+    question: "How do you want to see your opponent?",
+    answers: [
+      { text: "A rival,", result: "b" },
+      { text: "A friend that I want to create good memories with", result: "a" },
+      { text: "Just the competition", result: "c" },
       { text: "You make everyone feel welcome", result: "d" }
     ]
   }
