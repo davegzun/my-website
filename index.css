@@ -70,3 +70,15 @@ h1 {
     text-align: center;
     font-size: small;
 }
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery {
+  width: 80%;
+  max-width: 275px;
+  margin: 0 auto;
+}
