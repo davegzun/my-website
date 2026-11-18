@@ -71,14 +71,32 @@ h1 {
     font-size: small;
 }
 
-.gallery img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .gallery {
   width: 80%;
   max-width: 275px;
   margin: 0 auto;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.responsive {
+  flex: 1 1 200px;
+  max-width: 275px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desc {
+  text-align: center;
+  padding: 8px 0;
 }
