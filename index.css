@@ -36,7 +36,6 @@ body {
     padding: 8px 12px;
 }
 
-/* the underline, hidden by default */
 .nav-links li a::after {
     content: "";
     position: absolute;
@@ -53,6 +52,7 @@ nav a:hover,
 nav a:focus-visible,
 nav a[aria-current="page"] {
     color: #ff7aa8;
+    background-color: #877cc9;
 }
 
 nav a:hover::after,
@@ -68,4 +68,5 @@ h1 {
 
 .subtitle {
     text-align: center;
+    font-size: small;
 }
