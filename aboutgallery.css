@@ -75,7 +75,11 @@ h1 {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  max-width: 1000px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: block;
   width: 100%;
   text-align: left;
   border: none;
@@ -88,7 +92,11 @@ h1 {
 }
 
 .panel {
-  padding: 0 18px;
+  box-sizing: border-box;  
+  max-width: 1000px;
+  padding: 0 14px;
+  margin: 0 auto;
+  font-size: 0.95rem;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -96,7 +104,7 @@ h1 {
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
   font-size: 13px;
   color: #777;
   float: right;
@@ -104,7 +112,7 @@ h1 {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
 }
 
 .card-art {
@@ -144,8 +152,4 @@ h1 {
 .back-to-top:focus-visible {
   background-color: #877cc9;
   color: #ff7aa8;
-}
-
-html {
-  scroll-behavior: smooth;
 }
