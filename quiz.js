@@ -203,7 +203,7 @@ const triviaQuestions = [
    {
         question: "What is a term used for a card with a special shiny finish?",
     answers: ["A holographic", "A foil", "A shiny", "A glitter"],
-    correct: [0, 1]
+    correct: 0
   },
    {
         question: "True or False: Base set Pikachu is the most valued card in the first Pokemon set",
