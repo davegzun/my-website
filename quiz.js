@@ -145,9 +145,9 @@ const preferenceQuestions = [
     question: "How do you think when you see a problem:",
     answers: [
       { text: "There are many angles I can think about to answer it", result: "a" },
-      { text: "No thoughts, just answer it", result: "b" },
-      { text: "A sketchbook", result: "c" },
-      { text: "A phone", result: "d" }
+      { text: "use my friends for help", result: "b" },
+      { text: "form a plan, then execute", result: "c" },
+      { text: "No thoughts, just answer it", result: "d" }
     ]
   },
   {
@@ -160,21 +160,21 @@ const preferenceQuestions = [
     ]
   },
   {
-    question: "How do you want to see your opponent?",
+    question: "You find $100 on the floor, what do you do with it?",
     answers: [
-      { text: "A rival,", result: "b" },
-      { text: "A friend that I want to create good memories with", result: "a" },
-      { text: "Just the competition", result: "c" },
-      { text: "You make everyone feel welcome", result: "d" }
+      { text: "put it in the bank", result: "a" },
+      { text: "take my friends out to lunch", result: "b" },
+      { text: "Use it on myself", result: "c" },
+      { text: "just keep it, no one saw me pocket it", result: "d" }
     ]
   },
   {
-    question: "How do you want to see your opponent?",
+    question: "You're going out to enjoy the night, what do you bring?",
     answers: [
-      { text: "A rival,", result: "b" },
-      { text: "A friend that I want to create good memories with", result: "a" },
-      { text: "Just the competition", result: "c" },
-      { text: "You make everyone feel welcome", result: "d" }
+      { text: "A book", result: "b" },
+      { text: "My friends along", result: "a" },
+      { text: "Use the $100 I found earlier", result: "c" },
+      { text: "My keys", result: "d" }
     ]
   }
 ];
