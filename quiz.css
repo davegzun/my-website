@@ -138,3 +138,23 @@ h1 {
     text-align: center;
     font-size: small;
 }
+
+.back-to-top {
+  display: inline-block;
+  margin: 32px auto;
+  padding: 10px 20px;
+  background-color: #1f1a3d;
+  color: #E6D9D2;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background-color: #877cc9;
+  color: #ff7aa8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
