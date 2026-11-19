@@ -108,3 +108,26 @@ h1 {
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+.card-art {
+  width: 300px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.right-game-for-you {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+.right-game-for-you .paragraph {
+  flex: 1 1 300px;
+  margin: 0;
+}
