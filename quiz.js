@@ -124,7 +124,6 @@ function createTrivia(root, questions) {
   showQuestion();
 }
 
-/* ---------- Data ---------- */
 const preferenceResults = {
   a: { title: "Magic: The Gathering", text: "You enjoy the classic that started it all." },
   b: { title: "Pokemon TCG", text: "Whether you enjoy playing the video games, the creatures that inhabit their world, or collect a specific pokemon, this game is right for you." },
@@ -188,13 +187,79 @@ const triviaQuestions = [
   },
   {
     question: "Which company makes the Pokémon TCG?",
-    answers: ["Wizards of the Coast", "The Pokémon Company", "Bandai", "Riot Games"],
+    answers: ["Wizards of the Coast", "Bandai", "Riot Games", "The Pokémon Company"],
+    correct: 3
+  },
+    {
+    question: "Who created the Yu-Gi-Oh! Manga that lead to making its own card game",
+    answers: ["Richard Garfield", "Eiichiro Oda", "Kazuki Takahashi", "Dan Green"],
+    correct: 2
+  },
+  {
+        question: "True or False: Pot of Greed lets you draw two additional cards ",
+    answers: ["True", "False"],
+    correct: 0
+  },
+   {
+        question: "What is a term used for a card with a special shiny finish?",
+    answers: ["A holographic", "A foil", "A shiny", "A glitter"],
+    correct: [0, 1]
+  },
+   {
+        question: "True or False: Base set Pikachu is the most valued card in the first Pokemon set",
+    answers: ["True", "False"],
     correct: 1
-  }
-  // Add your own questions here. "correct" is the position of the
-  // right answer, counting from 0.
+  },
 ];
 
-/* ---------- Start both quizzes ---------- */
+/* ---------- Quiz 3: playstyle quiz ---------- */
+const playstyleResults = {
+  aggro: { title: "Aggro", text: "You like to take the initiative and put pressure on your opponent from turn one. Fast decks and quick wins are your thing." },
+  control: { title: "Control", text: "You're patient and calculated. You answer your opponent's threats one by one, then take over the late game." },
+  midrange: { title: "Midrange", text: "You're flexible and well-rounded. You can be fast or slow depending on what the game needs." },
+  combo: { title: "Combo", text: "You love finding powerful synergies. You build toward one huge turn where everything clicks." }
+};
+
+const playstyleQuestions = [
+  {
+    question: "It's the start of a match. What's your plan?",
+    answers: [
+      { text: "Hit hard and fast before they can react", result: "aggro" },
+      { text: "Hold back and answer whatever they do", result: "control" },
+      { text: "Build a solid board and adapt", result: "midrange" },
+      { text: "Set up my pieces for one big turn", result: "combo" }
+    ]
+  },
+  {
+    question: "Which sounds like the best feeling?",
+    answers: [
+      { text: "Winning on turn 4", result: "aggro" },
+      { text: "Countering my opponent's best card", result: "control" },
+      { text: "Out-trading them with stronger cards", result: "midrange" },
+      { text: "Pulling off a perfect combination", result: "combo" }
+    ]
+  },
+  {
+    question: "How do you feel about long games?",
+    answers: [
+      { text: "I'd rather end it quickly", result: "aggro" },
+      { text: "The longer the better, I win late", result: "control" },
+      { text: "I'm comfortable at any speed", result: "midrange" },
+      { text: "Depends on whether my deck came together", result: "combo" }
+    ]
+  },
+  {
+    question: "What do you enjoy most about deck building?",
+    answers: [
+      { text: "Picking the most powerful, cheap cards", result: "aggro" },
+      { text: "Finding answers for every threat", result: "control" },
+      { text: "Balancing a bit of everything", result: "midrange" },
+      { text: "Discovering card synergies", result: "combo" }
+    ]
+  }
+];
+
+/* ---------- Start all three quizzes ---------- */
 createQuiz(document.getElementById("quiz-preference"), preferenceResults, preferenceQuestions);
 createTrivia(document.getElementById("quiz-trivia"), triviaQuestions);
+createQuiz(document.getElementById("quiz-playstyle"), playstyleResults, playstyleQuestions);
